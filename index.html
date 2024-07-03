@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center fw-bold display-1 text-success">Calculater</h1>
+    <div class="container col-md-12 col-lg-6">
+        <table>
+            <tr>
+                <th colspan="4"><input type="text" id="result" class="form-control mb-2 text-center" placeholder="Result"></th> 
+            </tr>
+            <tr>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="7"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="8"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="9"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="+"></th>
+            </tr>
+            <tr>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="4"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="5"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="6"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="/"></th>
+            </tr>
+            <tr>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="1"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="2"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="3"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="*"></th>
+            </tr>
+            <tr>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="."></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="0"></th>
+                <th><input type="button" class="btn btn-danger form-control" readonly value="="></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="-"></th>
+            </tr>
+            <tr>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="pow"></th>
+                <th><input type="button" class="btn btn-secondary form-control" readonly value="sqrt"></th>
+                <th colspan="2"><input type="button" class="btn btn-success form-control" readonly value="round"></th>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="button" class="btn btn-secondary form-control" readonly value="Clear"></th>
+                <th colspan="2"><input type="button" class="btn btn-secondary form-control" readonly value="Back"></th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
