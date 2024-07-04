@@ -3,8 +3,15 @@ let botton =document.querySelectorAll("input[type='button']")
 
 for(let i=0 ;i<botton.length;i++){
     botton[i].addEventListener("click",function(e){
+        
         if(e.target.value === "="){
-            result.value= eval(result.value);
+            if(result.value.length ==0)
+                {
+                    result.value="0"
+                }
+            else{
+                    result.value= eval(result.value);
+                }
         }
         else if(e.target.value==="Clear"){
             result.value="";
@@ -26,6 +33,7 @@ for(let i=0 ;i<botton.length;i++){
             nepow=Math.pow(result.value,result.value)
             result.value=nepow
         }
+        
         else{
             result.value+=this.value
         }
